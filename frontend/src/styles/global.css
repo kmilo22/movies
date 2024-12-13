@@ -1,0 +1,233 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    color: #272727; /* Un rojo navideño */
+}
+
+p {
+    margin: 0.5rem 0;
+}
+
+a {
+    text-decoration: none;
+    color: #d32f2f;
+}
+
+  /* Navbar */
+.navbar {
+    background-color: #690202;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+
+.navbar a {
+    color: white;
+    font-weight: normal;
+    font-size: 1.2rem;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+  /* Footer */
+.footer {
+    background-color: #9b4d4d;
+    color: rgb(236, 236, 236);
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;    
+}
+
+.footer p{
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+  /* Movie Card */
+.movie-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 1rem;
+    max-width: 300px;
+    text-align: center;
+}
+
+.movie-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+}
+
+.movie-card h3 {
+    margin: 0px;
+}
+
+.movie-card h4{
+    line-height: 0px;
+    margin: 0px;
+}
+
+.movie-card p {
+    color: #666;
+    font-size: 0.9rem;
+    padding: 0px 8px;
+    margin-bottom: 24px;
+}
+
+  /* User Card */
+.user-card {
+    background-color: #fefefe;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 16px;
+    margin: 1rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user-card h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #690202;
+}
+
+.user-card p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+  /* Forms */
+form {
+    background-color: white;
+    padding: 1.5rem;
+    margin: 2rem auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+}
+
+form input, form textarea {
+    display: block;
+    width: calc(100% - 1.6rem);
+    margin-bottom: 1rem;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+form button {
+    display: block;
+    width: 50%;
+    margin-bottom: 1rem;
+    padding: 0.8rem;
+    font-size: 1rem;
+    background-color: #690202;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0 auto;
+    text-align: center;
+}
+
+form button:hover {
+    background-color: #b71c1c;
+}
+
+/* Home and Lists */
+.home, .users-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+/* Utility Classes */
+.center {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.movie-details {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.movie-details img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.movie-details h1 {
+    color: #d32f2f;
+    margin-bottom: 1rem;
+}
+
+.movie-details ul {
+    padding-left: 1.5rem;
+    list-style-type: disc;
+}
+
+.movie-details .error {
+    color: red;
+    font-weight: bold;
+}
+
+.favorites{
+    padding: 0 16px;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.favorites h1{
+    line-height: 0.5;
+}
+
+.favorites img{
+    width: 200px;
+    height: 200px;
+    margin-top: 5rem;
+}
+
+.home{
+    padding-bottom: 4rem;
+}
